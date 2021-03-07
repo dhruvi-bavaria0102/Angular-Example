@@ -1,0 +1,28 @@
+<p>home works!</p>
+<!--Interpolation-->
+<h1>My first expression : {{5-2}}</h1>
+<h3>{{"Welcome "+ firstName}}</h3>
+<h4>{{firstName.length}}</h4>
+<h4>{{firstName.toUpperCase()}}</h4>
+<input [value]="firstName">
+<button [disabled]="isDisable">Button</button>
+<button  bind-disabled="isDisable">Button</button>
+<!--Class binding-->
+<h2 class="text-Warning">Coding</h2>
+<h2 [class]="warningClass()">Dhruvi Bavaria</h2>
+<h2 class="text-bold" [class]="warningClass">Dhruvi Bavaria</h2><!--Class attribute won't work-->
+<h2 [class.text-green]="condition">Gateway Technolabs</h2>
+<!--ng class directive-->
+<h2 [ngClass]="ngclassexample">Dhruvi Bavaria</h2><!--Yellow colour in bold letter-->
+<!--Event binding-->
+<button [click]="onclick()">Login</button>
+<!--Interpolation Event Binding-->
+<button (click)= "onClickhere()">Click Here</button>
+{{clickMessage}}
+<!--Mouse click event(event binding)-->
+<button (click)="onClickme($event)">Click me</button>
+<!--Two Way Data binding-->
+<input [(ngModel)]="fullname" type="text"><br>
+{{fullname}}
+
+
