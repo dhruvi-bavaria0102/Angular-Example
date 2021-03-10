@@ -13,7 +13,7 @@ export class ParentComponent implements OnInit {
    "lastName":"Bavaria"
  }
   constructor() { }
-  @Input() item = any;
+  @Input() item : any;
   @Output() deleteRequest = new EventEmitter<string>();
 
   lineThrough = '';

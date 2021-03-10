@@ -13,6 +13,7 @@ export class HomeComponent implements OnInit {
   public warningClass = "text-Warning";
   public condition= false;
   public isbold=true;
+  public fullname="Dhruvi Bavaria";
   public ngclassexample={
     "text-Warning": this.condition,
     "text-green": this.condition,
@@ -25,16 +26,7 @@ export class HomeComponent implements OnInit {
   welcomeUser(){
     return "Welcome "+ this.firstName;
   }
-  onclick(){
-    alert("You just logged in");
-  }
-  onClickhere(){
-    this.clickMessage="You are awesome";
-  }
-  onClickme(event){
-    console.log(event);
-    this.clickMessage=event.type;
-  }
+ 
 
  
 }

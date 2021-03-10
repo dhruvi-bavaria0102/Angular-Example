@@ -342,8 +342,11 @@
   <h2>Input and Output together</h2>
   <p>Open the console to see the EventEmitter at work when you click Delete.</p>
   
-  <app-parent-child [item]="currentItem" (deleteRequest)="crossOffItem($event)"></app-parent-child>
-  
+  <app-parent [item]="currentItem" (deleteRequest)="crossOffItem($event)"></app-parent>
+  <app-employee-details></app-employee-details>
+  <app-employee-list></app-employee-list>
+  <input #nameRef type="text">
+ 
   <hr>
   
 </div>
